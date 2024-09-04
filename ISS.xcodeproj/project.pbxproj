@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EB3CE372C87D31D009BD31A /* ISSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE362C87D31D009BD31A /* ISSModel.swift */; };
+		9EB3CE3A2C87D518009BD31A /* ISSURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE392C87D518009BD31A /* ISSURLs.swift */; };
+		9EB3CE3D2C87E53B009BD31A /* ISSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE3C2C87E53B009BD31A /* ISSViewController.swift */; };
 		9EFB741E2C87C81100EE213A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB741D2C87C81100EE213A /* AppDelegate.swift */; };
 		9EFB74272C87C81200EE213A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFB74262C87C81200EE213A /* Assets.xcassets */; };
 		9EFB742A2C87C81200EE213A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9EFB74292C87C81200EE213A /* Base */; };
+		9EFB74332C87D18500EE213A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB74322C87D18500EE213A /* Coordinator.swift */; };
+		9EFB74372C87D23600EE213A /* ISSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB74362C87D23600EE213A /* ISSViewModel.swift */; };
+		9EFB743A2C87D24F00EE213A /* ISSDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB74392C87D24F00EE213A /* ISSDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9EB3CE362C87D31D009BD31A /* ISSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSModel.swift; sourceTree = "<group>"; };
+		9EB3CE392C87D518009BD31A /* ISSURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSURLs.swift; sourceTree = "<group>"; };
+		9EB3CE3C2C87E53B009BD31A /* ISSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSViewController.swift; sourceTree = "<group>"; };
 		9EFB741A2C87C81100EE213A /* ISS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFB741D2C87C81100EE213A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EFB74262C87C81200EE213A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EFB74292C87C81200EE213A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EFB742B2C87C81200EE213A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFB74322C87D18500EE213A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9EFB74362C87D23600EE213A /* ISSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSViewModel.swift; sourceTree = "<group>"; };
+		9EFB74392C87D24F00EE213A /* ISSDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EB3CE352C87D311009BD31A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3CE362C87D31D009BD31A /* ISSModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EB3CE382C87D506009BD31A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3CE392C87D518009BD31A /* ISSURLs.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9EB3CE3B2C87E52D009BD31A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3CE3C2C87E53B009BD31A /* ISSViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		9EFB74112C87C81100EE213A = {
 			isa = PBXGroup;
 			children = (
@@ -50,12 +86,50 @@
 		9EFB741C2C87C81100EE213A /* ISS */ = {
 			isa = PBXGroup;
 			children = (
+				9EFB74342C87D21000EE213A /* Files */,
 				9EFB741D2C87C81100EE213A /* AppDelegate.swift */,
+				9EB3CE382C87D506009BD31A /* Tools */,
+				9EFB74312C87D16E00EE213A /* Coordinator */,
+				9EB3CE352C87D311009BD31A /* Model */,
+				9EFB74382C87D24100EE213A /* DataManager */,
+				9EFB74352C87D22600EE213A /* ViewModel */,
+				9EB3CE3B2C87E52D009BD31A /* ViewController */,
+			);
+			path = ISS;
+			sourceTree = "<group>";
+		};
+		9EFB74312C87D16E00EE213A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB74322C87D18500EE213A /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9EFB74342C87D21000EE213A /* Files */ = {
+			isa = PBXGroup;
+			children = (
 				9EFB74262C87C81200EE213A /* Assets.xcassets */,
 				9EFB74282C87C81200EE213A /* LaunchScreen.storyboard */,
 				9EFB742B2C87C81200EE213A /* Info.plist */,
 			);
-			path = ISS;
+			name = Files;
+			sourceTree = "<group>";
+		};
+		9EFB74352C87D22600EE213A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB74362C87D23600EE213A /* ISSViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9EFB74382C87D24100EE213A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB74392C87D24F00EE213A /* ISSDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFB74372C87D23600EE213A /* ISSViewModel.swift in Sources */,
+				9EB3CE3A2C87D518009BD31A /* ISSURLs.swift in Sources */,
+				9EB3CE372C87D31D009BD31A /* ISSModel.swift in Sources */,
+				9EFB74332C87D18500EE213A /* Coordinator.swift in Sources */,
 				9EFB741E2C87C81100EE213A /* AppDelegate.swift in Sources */,
+				9EB3CE3D2C87E53B009BD31A /* ISSViewController.swift in Sources */,
+				9EFB743A2C87D24F00EE213A /* ISSDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
