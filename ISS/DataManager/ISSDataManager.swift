@@ -8,7 +8,11 @@
 import Foundation
 import Combine
 
-class ISSDataManager {
+protocol ISSDataManaging {
+    func getISSData(_ url: String) -> AnyPublisher<Data, Error>
+}
+
+class ISSDataManager: ISSDataManaging {
     
     func getISSData(_ url: String) -> AnyPublisher<Data, Error> {
         guard let url = URL(string: url) else {

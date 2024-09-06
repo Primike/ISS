@@ -7,13 +7,24 @@
 
 import Foundation
 
-struct ISSCoordinates: Codable {
+struct ISSModel: Decodable {
+    let timestamp: TimeInterval
+    let message: String
+    let iss_position: ISSCoordinates
+}
+
+struct ISSCoordinates: Decodable {
     let longitude: String
     let latitude: String
 }
 
-struct ISSModel: Codable {
-    let timestamp: Int
+struct ISSPeople: Decodable {
     let message: String
-    let iss_position: ISSCoordinates
+    let number: Int
+    let people: [Astronaut]
+}
+
+struct Astronaut: Decodable {
+    let craft: String
+    let name: String
 }

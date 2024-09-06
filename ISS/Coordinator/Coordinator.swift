@@ -16,13 +16,18 @@ class ISSCoordinator {
         self.navigationController = navigationController
     }
     
+    /// Creates the first viewController
     func start() {
         let dataManager = ISSDataManager()
         let viewModel = ISSViewModel(dataManager: dataManager)
         let viewController = ISSViewController(viewModel: viewModel)
-        viewController.view.backgroundColor = .blue
         viewController.coordinator = self
         
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    /// Presents the viewController that displays logs of ISS locations
+    func presentLogs(_ viewModel: ISSViewModel) {
+        navigationController.present(ISSLogsViewController(viewModel: viewModel), animated: true)
     }
 }

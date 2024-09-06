@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9EB3CE372C87D31D009BD31A /* ISSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE362C87D31D009BD31A /* ISSModel.swift */; };
-		9EB3CE3A2C87D518009BD31A /* ISSURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE392C87D518009BD31A /* ISSURLs.swift */; };
+		9EB3CE3A2C87D518009BD31A /* ISSEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE392C87D518009BD31A /* ISSEnums.swift */; };
 		9EB3CE3D2C87E53B009BD31A /* ISSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE3C2C87E53B009BD31A /* ISSViewController.swift */; };
+		9EB3CE402C88B319009BD31A /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE3E2C88B319009BD31A /* UserLocationManager.swift */; };
+		9EB3CE412C88B319009BD31A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE3F2C88B319009BD31A /* Reachability.swift */; };
+		9EB3CE432C89001A009BD31A /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE422C89001A009BD31A /* Math.swift */; };
+		9EB3CE462C8A053F009BD31A /* ISSTextDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE452C8A053F009BD31A /* ISSTextDetailsView.swift */; };
+		9EB3CE492C8A17C5009BD31A /* LabelFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE482C8A17C5009BD31A /* LabelFormatter.swift */; };
+		9EB3CE4B2C8A26A6009BD31A /* ISSLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE4A2C8A26A6009BD31A /* ISSLogsViewController.swift */; };
+		9EB3CE4D2C8A2E4B009BD31A /* ISSCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE4C2C8A2E4B009BD31A /* ISSCellView.swift */; };
 		9EFB741E2C87C81100EE213A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB741D2C87C81100EE213A /* AppDelegate.swift */; };
 		9EFB74272C87C81200EE213A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFB74262C87C81200EE213A /* Assets.xcassets */; };
 		9EFB742A2C87C81200EE213A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9EFB74292C87C81200EE213A /* Base */; };
@@ -20,8 +27,15 @@
 
 /* Begin PBXFileReference section */
 		9EB3CE362C87D31D009BD31A /* ISSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSModel.swift; sourceTree = "<group>"; };
-		9EB3CE392C87D518009BD31A /* ISSURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSURLs.swift; sourceTree = "<group>"; };
+		9EB3CE392C87D518009BD31A /* ISSEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSEnums.swift; sourceTree = "<group>"; };
 		9EB3CE3C2C87E53B009BD31A /* ISSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSViewController.swift; sourceTree = "<group>"; };
+		9EB3CE3E2C88B319009BD31A /* UserLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
+		9EB3CE3F2C88B319009BD31A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		9EB3CE422C89001A009BD31A /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		9EB3CE452C8A053F009BD31A /* ISSTextDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSTextDetailsView.swift; sourceTree = "<group>"; };
+		9EB3CE482C8A17C5009BD31A /* LabelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFormatter.swift; sourceTree = "<group>"; };
+		9EB3CE4A2C8A26A6009BD31A /* ISSLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLogsViewController.swift; sourceTree = "<group>"; };
+		9EB3CE4C2C8A2E4B009BD31A /* ISSCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSCellView.swift; sourceTree = "<group>"; };
 		9EFB741A2C87C81100EE213A /* ISS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFB741D2C87C81100EE213A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EFB74262C87C81200EE213A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +68,11 @@
 		9EB3CE382C87D506009BD31A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				9EB3CE392C87D518009BD31A /* ISSURLs.swift */,
+				9EB3CE3E2C88B319009BD31A /* UserLocationManager.swift */,
+				9EB3CE3F2C88B319009BD31A /* Reachability.swift */,
+				9EB3CE392C87D518009BD31A /* ISSEnums.swift */,
+				9EB3CE422C89001A009BD31A /* Math.swift */,
+				9EB3CE482C8A17C5009BD31A /* LabelFormatter.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -63,8 +81,18 @@
 			isa = PBXGroup;
 			children = (
 				9EB3CE3C2C87E53B009BD31A /* ISSViewController.swift */,
+				9EB3CE4A2C8A26A6009BD31A /* ISSLogsViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9EB3CE442C8A0518009BD31A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3CE452C8A053F009BD31A /* ISSTextDetailsView.swift */,
+				9EB3CE4C2C8A2E4B009BD31A /* ISSCellView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9EFB74112C87C81100EE213A = {
@@ -94,6 +122,7 @@
 				9EFB74382C87D24100EE213A /* DataManager */,
 				9EFB74352C87D22600EE213A /* ViewModel */,
 				9EB3CE3B2C87E52D009BD31A /* ViewController */,
+				9EB3CE442C8A0518009BD31A /* Views */,
 			);
 			path = ISS;
 			sourceTree = "<group>";
@@ -203,12 +232,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EFB74372C87D23600EE213A /* ISSViewModel.swift in Sources */,
-				9EB3CE3A2C87D518009BD31A /* ISSURLs.swift in Sources */,
+				9EB3CE432C89001A009BD31A /* Math.swift in Sources */,
+				9EB3CE462C8A053F009BD31A /* ISSTextDetailsView.swift in Sources */,
+				9EB3CE3A2C87D518009BD31A /* ISSEnums.swift in Sources */,
 				9EB3CE372C87D31D009BD31A /* ISSModel.swift in Sources */,
 				9EFB74332C87D18500EE213A /* Coordinator.swift in Sources */,
+				9EB3CE402C88B319009BD31A /* UserLocationManager.swift in Sources */,
+				9EB3CE412C88B319009BD31A /* Reachability.swift in Sources */,
 				9EFB741E2C87C81100EE213A /* AppDelegate.swift in Sources */,
 				9EB3CE3D2C87E53B009BD31A /* ISSViewController.swift in Sources */,
+				9EB3CE4D2C8A2E4B009BD31A /* ISSCellView.swift in Sources */,
 				9EFB743A2C87D24F00EE213A /* ISSDataManager.swift in Sources */,
+				9EB3CE492C8A17C5009BD31A /* LabelFormatter.swift in Sources */,
+				9EB3CE4B2C8A26A6009BD31A /* ISSLogsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +391,8 @@
 				DEVELOPMENT_TEAM = MDPY9LF665;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ISS/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app uses your location to calculate your distance from the ISS.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to calculate your distance from the ISS.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -382,6 +420,8 @@
 				DEVELOPMENT_TEAM = MDPY9LF665;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ISS/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app uses your location to calculate your distance from the ISS.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to calculate your distance from the ISS.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
