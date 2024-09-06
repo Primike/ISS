@@ -35,7 +35,7 @@ class ISSViewModel: ObservableObject {
     
     /// Fetch data for people in the ISS
     private func getAstronautData() {
-        dataManager.getISSData(ISSURLs.astronauts.rawValue)
+        dataManager.getISSData(ISSURLs.astronauts)
             .retry(5)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
@@ -63,33 +63,33 @@ class ISSViewModel: ObservableObject {
             .autoconnect()
             .prepend(Date())
             .flatMap { _ in
-                self.dataManager.getISSData(ISSURLs.location.rawValue)
+                self.dataManager.getISSData(ISSURLs.location)
+                    .catch { error -> Empty<Data, Never> in
+                        print("Error occurred: \(error.localizedDescription)")
+                        return Empty()
+                    }
             }
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { [weak self] completion in
-                self?.handleCompletion(completion)
-            }, receiveValue: { [weak self] data in
+            .sink(receiveValue: { [weak self] data in
                 self?.handleReceivedData(data)
             })
             .store(in: &cancellables)
     }
-    
+
     // MARK: - Handling the fetched data
-    
-    private func handleCompletion(_ completion: Subscribers.Completion<Error>) {
-        switch completion {
-        case .failure(let error):
-            print("API fetch error: \(error)")
-        case .finished:
-            break
-        }
-    }
 
     private func handleReceivedData(_ data: Data) {
         do {
             let model = try JSONDecoder().decode(ISSModel.self, from: data)
             self.loggedLocations.append(model)
-            if self.loggedLocations.count > 500 { self.loggedLocations.removeFirst() }
+            
+            /// Removes too much data perhaps there could be other work arounds
+            /// but the specifications were vague as claimed. Since the ISS rotates
+            /// the earth every 90 min some much larger features would have to be
+            /// implemented to make use of trajectories
+            if self.loggedLocations.count > 500 {
+                self.loggedLocations.removeFirst()
+            }
             
             self.calculateISSDetails(model)
         } catch {
@@ -147,10 +147,18 @@ class ISSViewModel: ObservableObject {
     // MARK: - ISS logs text methods
     
     func getLogCellText(for indexPath: IndexPath) -> (String, String) {
-        let latitudeText = "Latitude: \(loggedLocations[indexPath.row].iss_position.latitude)"
-        let longitudeText = "Longitude: \(loggedLocations[indexPath.row].iss_position.longitude)"
+        /// Using index so that the data can be displayed in the form of a queue in tableview
+        /// saves time complexity instead of inserting new logs at index 0 of loggedLocations
+        let index = loggedLocations.count - 1 - indexPath.row
+
+        guard index >= 0, index < loggedLocations.count else {
+            return ("", "")
+        }
         
-        let timestamp = loggedLocations[indexPath.row].timestamp
+        let latitudeText = "Latitude: \(loggedLocations[index].iss_position.latitude)"
+        let longitudeText = "Longitude: \(loggedLocations[index].iss_position.longitude)"
+        
+        let timestamp = loggedLocations[index].timestamp
         let date = Date(timeIntervalSince1970: timestamp)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE HH:mm:ss"

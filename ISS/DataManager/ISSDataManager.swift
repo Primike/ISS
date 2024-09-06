@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 protocol ISSDataManaging {
-    func getISSData(_ url: String) -> AnyPublisher<Data, Error>
+    func getISSData(_ url: ISSURLs) -> AnyPublisher<Data, Error>
 }
 
 class ISSDataManager: ISSDataManaging {
     
-    func getISSData(_ url: String) -> AnyPublisher<Data, Error> {
-        guard let url = URL(string: url) else {
+    func getISSData(_ url: ISSURLs) -> AnyPublisher<Data, Error> {
+        guard let url = URL(string: url.rawValue) else {
             print("Failed to make URL")
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }

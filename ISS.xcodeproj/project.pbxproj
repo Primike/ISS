@@ -11,12 +11,15 @@
 		9EB3CE3A2C87D518009BD31A /* ISSEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE392C87D518009BD31A /* ISSEnums.swift */; };
 		9EB3CE3D2C87E53B009BD31A /* ISSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE3C2C87E53B009BD31A /* ISSViewController.swift */; };
 		9EB3CE402C88B319009BD31A /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE3E2C88B319009BD31A /* UserLocationManager.swift */; };
-		9EB3CE412C88B319009BD31A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE3F2C88B319009BD31A /* Reachability.swift */; };
 		9EB3CE432C89001A009BD31A /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE422C89001A009BD31A /* Math.swift */; };
 		9EB3CE462C8A053F009BD31A /* ISSTextDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE452C8A053F009BD31A /* ISSTextDetailsView.swift */; };
 		9EB3CE492C8A17C5009BD31A /* LabelFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE482C8A17C5009BD31A /* LabelFormatter.swift */; };
 		9EB3CE4B2C8A26A6009BD31A /* ISSLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE4A2C8A26A6009BD31A /* ISSLogsViewController.swift */; };
 		9EB3CE4D2C8A2E4B009BD31A /* ISSCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3CE4C2C8A2E4B009BD31A /* ISSCellView.swift */; };
+		9EE0E50B2C8A9517002D8F51 /* ISSViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0E50A2C8A9517002D8F51 /* ISSViewModelTests.swift */; };
+		9EE0E5142C8A9571002D8F51 /* MockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0E5132C8A9571002D8F51 /* MockDataManager.swift */; };
+		9EE0E5162C8A9620002D8F51 /* MockAstronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EE0E5152C8A9620002D8F51 /* MockAstronauts.json */; };
+		9EE0E5182C8A9930002D8F51 /* MockLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EE0E5172C8A9930002D8F51 /* MockLocation.json */; };
 		9EFB741E2C87C81100EE213A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB741D2C87C81100EE213A /* AppDelegate.swift */; };
 		9EFB74272C87C81200EE213A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFB74262C87C81200EE213A /* Assets.xcassets */; };
 		9EFB742A2C87C81200EE213A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9EFB74292C87C81200EE213A /* Base */; };
@@ -25,17 +28,31 @@
 		9EFB743A2C87D24F00EE213A /* ISSDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB74392C87D24F00EE213A /* ISSDataManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9EE0E50C2C8A9517002D8F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFB74122C87C81100EE213A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFB74192C87C81100EE213A;
+			remoteInfo = ISS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9EB3CE362C87D31D009BD31A /* ISSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSModel.swift; sourceTree = "<group>"; };
 		9EB3CE392C87D518009BD31A /* ISSEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSEnums.swift; sourceTree = "<group>"; };
 		9EB3CE3C2C87E53B009BD31A /* ISSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSViewController.swift; sourceTree = "<group>"; };
 		9EB3CE3E2C88B319009BD31A /* UserLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
-		9EB3CE3F2C88B319009BD31A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		9EB3CE422C89001A009BD31A /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		9EB3CE452C8A053F009BD31A /* ISSTextDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSTextDetailsView.swift; sourceTree = "<group>"; };
 		9EB3CE482C8A17C5009BD31A /* LabelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFormatter.swift; sourceTree = "<group>"; };
 		9EB3CE4A2C8A26A6009BD31A /* ISSLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLogsViewController.swift; sourceTree = "<group>"; };
 		9EB3CE4C2C8A2E4B009BD31A /* ISSCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSCellView.swift; sourceTree = "<group>"; };
+		9EE0E5082C8A9517002D8F51 /* ISSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE0E50A2C8A9517002D8F51 /* ISSViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSViewModelTests.swift; sourceTree = "<group>"; };
+		9EE0E5132C8A9571002D8F51 /* MockDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataManager.swift; sourceTree = "<group>"; };
+		9EE0E5152C8A9620002D8F51 /* MockAstronauts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockAstronauts.json; sourceTree = "<group>"; };
+		9EE0E5172C8A9930002D8F51 /* MockLocation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockLocation.json; sourceTree = "<group>"; };
 		9EFB741A2C87C81100EE213A /* ISS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFB741D2C87C81100EE213A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EFB74262C87C81200EE213A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9EE0E5052C8A9517002D8F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EFB74172C87C81100EE213A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				9EB3CE3E2C88B319009BD31A /* UserLocationManager.swift */,
-				9EB3CE3F2C88B319009BD31A /* Reachability.swift */,
 				9EB3CE392C87D518009BD31A /* ISSEnums.swift */,
 				9EB3CE422C89001A009BD31A /* Math.swift */,
 				9EB3CE482C8A17C5009BD31A /* LabelFormatter.swift */,
@@ -95,10 +118,46 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9EE0E5092C8A9517002D8F51 /* ISSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0E5192C8A9CA6002D8F51 /* ISSViewModelTests */,
+				9EE0E5122C8A9565002D8F51 /* MockData */,
+				9EE0E5112C8A9530002D8F51 /* MockDataManager */,
+			);
+			path = ISSTests;
+			sourceTree = "<group>";
+		};
+		9EE0E5112C8A9530002D8F51 /* MockDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0E5132C8A9571002D8F51 /* MockDataManager.swift */,
+			);
+			path = MockDataManager;
+			sourceTree = "<group>";
+		};
+		9EE0E5122C8A9565002D8F51 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0E5152C8A9620002D8F51 /* MockAstronauts.json */,
+				9EE0E5172C8A9930002D8F51 /* MockLocation.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		9EE0E5192C8A9CA6002D8F51 /* ISSViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0E50A2C8A9517002D8F51 /* ISSViewModelTests.swift */,
+			);
+			path = ISSViewModelTests;
+			sourceTree = "<group>";
+		};
 		9EFB74112C87C81100EE213A = {
 			isa = PBXGroup;
 			children = (
 				9EFB741C2C87C81100EE213A /* ISS */,
+				9EE0E5092C8A9517002D8F51 /* ISSTests */,
 				9EFB741B2C87C81100EE213A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				9EFB741A2C87C81100EE213A /* ISS.app */,
+				9EE0E5082C8A9517002D8F51 /* ISSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +224,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9EE0E5072C8A9517002D8F51 /* ISSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE0E50E2C8A9517002D8F51 /* Build configuration list for PBXNativeTarget "ISSTests" */;
+			buildPhases = (
+				9EE0E5042C8A9517002D8F51 /* Sources */,
+				9EE0E5052C8A9517002D8F51 /* Frameworks */,
+				9EE0E5062C8A9517002D8F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EE0E50D2C8A9517002D8F51 /* PBXTargetDependency */,
+			);
+			name = ISSTests;
+			productName = ISSTests;
+			productReference = 9EE0E5082C8A9517002D8F51 /* ISSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9EFB74192C87C81100EE213A /* ISS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EFB742E2C87C81200EE213A /* Build configuration list for PBXNativeTarget "ISS" */;
@@ -191,6 +269,10 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					9EE0E5072C8A9517002D8F51 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9EFB74192C87C81100EE213A;
+					};
 					9EFB74192C87C81100EE213A = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -210,11 +292,21 @@
 			projectRoot = "";
 			targets = (
 				9EFB74192C87C81100EE213A /* ISS */,
+				9EE0E5072C8A9517002D8F51 /* ISSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9EE0E5062C8A9517002D8F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE0E5162C8A9620002D8F51 /* MockAstronauts.json in Resources */,
+				9EE0E5182C8A9930002D8F51 /* MockLocation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EFB74182C87C81100EE213A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +319,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9EE0E5042C8A9517002D8F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE0E50B2C8A9517002D8F51 /* ISSViewModelTests.swift in Sources */,
+				9EE0E5142C8A9571002D8F51 /* MockDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EFB74162C87C81100EE213A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,7 +339,6 @@
 				9EB3CE372C87D31D009BD31A /* ISSModel.swift in Sources */,
 				9EFB74332C87D18500EE213A /* Coordinator.swift in Sources */,
 				9EB3CE402C88B319009BD31A /* UserLocationManager.swift in Sources */,
-				9EB3CE412C88B319009BD31A /* Reachability.swift in Sources */,
 				9EFB741E2C87C81100EE213A /* AppDelegate.swift in Sources */,
 				9EB3CE3D2C87E53B009BD31A /* ISSViewController.swift in Sources */,
 				9EB3CE4D2C8A2E4B009BD31A /* ISSCellView.swift in Sources */,
@@ -249,6 +349,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EE0E50D2C8A9517002D8F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFB74192C87C81100EE213A /* ISS */;
+			targetProxy = 9EE0E50C2C8A9517002D8F51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9EFB74282C87C81200EE213A /* LaunchScreen.storyboard */ = {
@@ -262,6 +370,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9EE0E50F2C8A9517002D8F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MDPY9LF665;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Primike.ISSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ISS";
+			};
+			name = Debug;
+		};
+		9EE0E5102C8A9517002D8F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MDPY9LF665;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Primike.ISSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ISS";
+			};
+			name = Release;
+		};
 		9EFB742C2C87C81200EE213A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,6 +586,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9EE0E50E2C8A9517002D8F51 /* Build configuration list for PBXNativeTarget "ISSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE0E50F2C8A9517002D8F51 /* Debug */,
+				9EE0E5102C8A9517002D8F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9EFB74152C87C81100EE213A /* Build configuration list for PBXProject "ISS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

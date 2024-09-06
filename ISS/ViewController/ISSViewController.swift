@@ -13,6 +13,7 @@ import Combine
 class ISSViewController: UIViewController {
     
     weak var coordinator: ISSCoordinator?
+    private var locationManager = UserLocationManager()
     private let viewModel: ISSViewModel
     private var cancellables: Set<AnyCancellable> = []
     private var didCenterMap = false
@@ -76,6 +77,10 @@ class ISSViewController: UIViewController {
         layout()
         setupBindings()
         
+        if locationManager.isLocationServicesDisabled {
+            showLocationServicesAlert()
+        }
+        
         issTextDetailsView.showLogsButton.addTarget(self, action: #selector(showLogsButtonTapped), for: .touchUpInside)
     }
     
@@ -110,6 +115,24 @@ class ISSViewController: UIViewController {
             didCenterMap = true
             map.setCenter(coordinate, animated: true)
         }
+    }
+    
+    /// Shows alert if allow location is off
+    private func showLocationServicesAlert() {
+        let alert = UIAlertController(title: "Location Services Disabled", message: "This app requires the user location please enable location services in Settings.", preferredStyle: .alert)
+        
+        let openSettingsButton = UIAlertAction(title: "Open Settings", style: .default) { _ in
+            if let appSettings = URL(string: UIApplication.openSettingsURLString) {
+                UIApplication.shared.open(appSettings)
+            }
+        }
+        
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(openSettingsButton)
+        alert.addAction(cancelButton)
+        
+        self.present(alert, animated: true, completion: nil)
     }
 
     private func layout() {
